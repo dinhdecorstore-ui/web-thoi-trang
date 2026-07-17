@@ -356,7 +356,11 @@ function bindEvents() {
 
     if (target.matches("[data-open-cart]")) openCart();
     if (target.matches("[data-close-cart]")) closeCart();
-    if (target.matches("[data-open-search]")) $("[data-search-panel]").hidden = false;
+    if (target.matches("[data-open-search]")) {
+      const input = $("[data-search-input]");
+      document.querySelector("#collection").scrollIntoView({ behavior: "smooth" });
+      window.setTimeout(() => input?.focus(), 450);
+    }
     if (target.matches("[data-close-search]")) $("[data-search-panel]").hidden = true;
     if (target.matches("[data-show-wishlist]")) showWishlistOnly();
     if (target.matches("[data-menu-toggle]")) $("[data-main-nav]").classList.toggle("open");
