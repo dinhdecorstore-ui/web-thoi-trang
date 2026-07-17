@@ -315,3 +315,6 @@ h2 { margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: .95; letter-spac
   .modal-body { padding: 30px 22px; }
   .modal-body h2 { font-size: 34px; }
 }
+
+/* Search popup removed: keep this as a safety guard against stale cached markup. */
+.search-panel { display: none !important; }
