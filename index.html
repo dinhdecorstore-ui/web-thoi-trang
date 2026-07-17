@@ -3,265 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Web Thời Trang — AIR+ Comfort Men</title>
-  <meta name="description" content="Website thời trang nam hoàn chỉnh với danh mục sản phẩm, lọc, tìm kiếm, giỏ hàng, thanh toán demo, newsletter và giao diện responsive." />
+  <title>AIR+ Store — Web thời trang đầy đủ</title>
+  <meta name="description" content="Website bán hàng thời trang đầy đủ: trang chủ, danh mục, chi tiết sản phẩm, giỏ hàng, checkout, tài khoản, đơn hàng và hỗ trợ." />
   <meta name="theme-color" content="#e60012" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="promo-bar">
-    <span>Miễn phí giao hàng từ 999.000đ</span>
-    <span>Đổi trả trong 30 ngày</span>
-    <span>Nhập mã AIR10 giảm 10%</span>
+    <span>Freeship từ 999.000đ</span>
+    <span>Đổi trả 30 ngày</span>
+    <span>Mã giảm giá: AIR10</span>
   </div>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="AIR+ trang chủ">
-      <span>AIR</span>
-      <span>PLUS</span>
-    </a>
-
-    <button class="icon-button menu-button" type="button" aria-label="Mở menu" data-menu-toggle>
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="main-nav" data-main-nav aria-label="Điều hướng chính">
-      <a href="#collection">Sản phẩm</a>
-      <a href="#technology">Công nghệ</a>
-      <a href="#lookbook">Phối đồ</a>
-      <a href="#stores">Cửa hàng</a>
-      <a href="#support">Hỗ trợ</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="AIR+ Store"><span>AIR</span><span>PLUS</span></a>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="Mở menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" data-main-nav>
+      <a href="#/">Trang chủ</a>
+      <a href="#/shop">Sản phẩm</a>
+      <a href="#/lookbook">Lookbook</a>
+      <a href="#/support">Hỗ trợ</a>
+      <a href="#/account">Tài khoản</a>
     </nav>
-
     <div class="header-actions">
-      <button class="text-button" type="button" data-open-search>Tìm kiếm</button>
-      <button class="text-button" type="button" data-show-wishlist>Yêu thích <span data-wishlist-count>0</span></button>
-      <button class="cart-button" type="button" data-open-cart>Giỏ hàng <span data-cart-count>0</span></button>
+      <button type="button" class="plain-button" data-search-focus>Tìm kiếm</button>
+      <a class="plain-button" href="#/account">♥ <span data-wishlist-count>0</span></a>
+      <a class="cart-link" href="#/cart">Giỏ hàng <span data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">2026 Summer essentials</p>
-        <h1>AIR<span>Comfort</span></h1>
-        <p>
-          Trang phục mát nhẹ cho khí hậu nóng ẩm: tối giản, dễ phối, nhanh khô và thoải mái trong mọi lịch trình.
-        </p>
-        <div class="hero-actions">
-          <a class="primary-link" href="#collection">Mua bộ sưu tập</a>
-          <a class="secondary-link" href="#technology">Xem công nghệ vải</a>
-        </div>
-        <div class="hero-metrics" aria-label="Điểm nổi bật">
-          <div><strong>4.9/5</strong><span>đánh giá</span></div>
-          <div><strong>24h</strong><span>giao nhanh nội thành</span></div>
-          <div><strong>30 ngày</strong><span>đổi trả</span></div>
-        </div>
-      </div>
-      <div class="hero-art" aria-label="Minh họa sản phẩm thời trang nam">
-        <div class="model-card model-one"><span>Crew neck</span></div>
-        <div class="model-card model-two"><span>Polo shirt</span></div>
-        <div class="hero-badge">STAY COOL<br />ALL DAY</div>
-      </div>
-    </section>
-
-    <section class="category-strip" aria-label="Danh mục nhanh">
-      <button class="active" type="button" data-category-tab="all">Tất cả</button>
-      <button type="button" data-category-tab="Áo thun">Áo thun</button>
-      <button type="button" data-category-tab="Polo">Polo</button>
-      <button type="button" data-category-tab="Áo khoác">Áo khoác</button>
-      <button type="button" data-category-tab="Đồ lót">Đồ lót</button>
-    </section>
-
-    <section class="intro-band">
-      <div>
-        <p class="kicker">AIR Comfort là gì?</p>
-        <h2>Một lớp vải mát nhẹ cho mọi khoảnh khắc.</h2>
-      </div>
-      <p>
-        Website này là bản tĩnh hoàn chỉnh: có lọc sản phẩm, tìm kiếm, chọn size/màu, giỏ hàng, mã giảm giá, thanh toán demo, newsletter, form liên hệ và lưu dữ liệu bằng trình duyệt.
-      </p>
-    </section>
-
-    <section class="section tech-section" id="technology">
-      <div class="section-head">
-        <p class="kicker">Technology</p>
-        <h2>Cảm giác mát từ chất liệu đến phom dáng.</h2>
-      </div>
-      <div class="feature-grid">
-        <article><span>01</span><h3>Cool touch</h3><p>Bề mặt vải mịn tạo cảm giác mát ngay khi chạm vào da.</p></article>
-        <article><span>02</span><h3>Quick dry</h3><p>Cấu trúc sợi thoát ẩm giúp trang phục khô nhanh trong khí hậu nóng ẩm.</p></article>
-        <article><span>03</span><h3>Anti-odor</h3><p>Hoàn thiện kháng mùi cho ngày dài di chuyển, làm việc hoặc du lịch.</p></article>
-        <article><span>04</span><h3>Stretch</h3><p>Co giãn tự nhiên, nhẹ nhàng đi theo chuyển động của cơ thể.</p></article>
-      </div>
-    </section>
-
-    <section class="section products-section" id="collection">
-      <div class="section-head row">
-        <div>
-          <p class="kicker">Men AIR Comfort</p>
-          <h2>Mua theo nhu cầu</h2>
-        </div>
-        <p class="result-copy"><span data-result-count>0</span> sản phẩm phù hợp</p>
-      </div>
-
-      <div class="shop-toolbar" aria-label="Bộ lọc sản phẩm">
-        <label>
-          Tìm kiếm
-          <input type="search" placeholder="Áo thun, polo, UV..." data-search-input />
-        </label>
-        <label>
-          Danh mục
-          <select data-category-filter>
-            <option value="all">Tất cả</option>
-            <option value="Áo thun">Áo thun</option>
-            <option value="Polo">Polo</option>
-            <option value="Áo khoác">Áo khoác</option>
-            <option value="Đồ lót">Đồ lót</option>
-          </select>
-        </label>
-        <label>
-          Sắp xếp
-          <select data-sort-filter>
-            <option value="featured">Nổi bật</option>
-            <option value="priceAsc">Giá tăng dần</option>
-            <option value="priceDesc">Giá giảm dần</option>
-            <option value="ratingDesc">Đánh giá cao</option>
-          </select>
-        </label>
-        <label>
-          Giá tối đa: <strong data-price-label>799.000đ</strong>
-          <input type="range" min="199000" max="799000" step="50000" value="799000" data-price-filter />
-        </label>
-      </div>
-
-      <div class="product-grid" data-product-grid></div>
-      <div class="empty-state" data-empty-state hidden>
-        <h3>Không tìm thấy sản phẩm</h3>
-        <p>Hãy thử đổi từ khóa, danh mục hoặc tăng mức giá tối đa.</p>
-      </div>
-    </section>
-
-    <section class="lookbook" id="lookbook">
-      <div class="lookbook-art"><div class="poster-text">LIFE IN<br />AIR</div></div>
-      <div class="lookbook-copy">
-        <p class="kicker">Style guide</p>
-        <h2>Gợi ý phối đồ cho mùa nóng.</h2>
-        <ol>
-          <li>Áo thun cổ tròn + quần short nylon + sneaker trắng.</li>
-          <li>Polo xanh nhạt + quần chinos trắng cho ngày đi làm.</li>
-          <li>Áo khoác UV + áo ba lỗ AIR cho du lịch cuối tuần.</li>
-        </ol>
-        <a class="primary-link" href="#collection">Chọn outfit</a>
-      </div>
-    </section>
-
-    <section class="section reviews-section">
-      <div class="section-head row">
-        <div>
-          <p class="kicker">Khách hàng nói gì</p>
-          <h2>Được chọn cho ngày nóng.</h2>
-        </div>
-      </div>
-      <div class="review-grid">
-        <article><strong>“Mặc đi làm cả ngày vẫn dễ chịu.”</strong><span>Minh Anh — TP.HCM</span></article>
-        <article><strong>“Vải nhẹ, form gọn, giặt nhanh khô.”</strong><span>Hoàng Nam — Hà Nội</span></article>
-        <article><strong>“Polo đủ lịch sự mà không bị nóng.”</strong><span>Quốc Bảo — Đà Nẵng</span></article>
-      </div>
-    </section>
-
-    <section class="info-rows" id="stores" aria-label="Dịch vụ mua sắm">
-      <article><h3>Click & Collect</h3><p>Đặt online, nhận tại cửa hàng gần bạn.</p></article>
-      <article><h3>Tư vấn kích cỡ</h3><p>Bảng size rõ ràng cho từng nhóm sản phẩm.</p></article>
-      <article><h3>Ưu đãi thành viên</h3><p>Tích điểm và nhận thông báo sản phẩm mới.</p></article>
-    </section>
-
-    <section class="contact-section" id="support">
-      <div>
-        <p class="kicker">Hỗ trợ</p>
-        <h2>Cần tư vấn size hoặc phối đồ?</h2>
-        <p>Gửi thông tin, đội ngũ tư vấn sẽ liên hệ lại trong thời gian sớm nhất.</p>
-      </div>
-      <form class="contact-form" data-contact-form>
-        <input type="text" name="name" placeholder="Họ tên" required />
-        <input type="tel" name="phone" placeholder="Số điện thoại" required />
-        <textarea name="message" placeholder="Bạn cần hỗ trợ gì?" rows="4" required></textarea>
-        <button type="submit">Gửi yêu cầu</button>
-      </form>
-    </section>
-
-    <section class="faq-section" aria-label="Câu hỏi thường gặp">
-      <h2>Câu hỏi thường gặp</h2>
-      <div class="faq-list">
-        <button type="button" class="faq-item" aria-expanded="false">
-          <span>Website này có thanh toán thật không?</span>
-          <em>Đây là checkout demo cho website tĩnh. Không thu tiền thật.</em>
-        </button>
-        <button type="button" class="faq-item" aria-expanded="false">
-          <span>Giỏ hàng có được lưu không?</span>
-          <em>Có. Giỏ hàng và yêu thích được lưu bằng localStorage của trình duyệt.</em>
-        </button>
-        <button type="button" class="faq-item" aria-expanded="false">
-          <span>Có thể host miễn phí ở đâu?</span>
-          <em>Có thể dùng GitHub Pages với tên miền dạng username.github.io/repository.</em>
-        </button>
-      </div>
-    </section>
-
-    <section class="newsletter-section">
-      <div>
-        <p class="kicker">AIR+ Member</p>
-        <h2>Nhận tin mở bán và ưu đãi AIR Comfort.</h2>
-      </div>
-      <form data-newsletter-form>
-        <input type="email" placeholder="Email của bạn" aria-label="Email" required />
-        <button type="submit">Đăng ký</button>
-      </form>
-    </section>
-  </main>
+  <main id="app" class="app-shell" aria-live="polite"></main>
 
   <footer class="site-footer">
     <div>
-      <a class="brand small" href="#top"><span>AIR</span><span>PLUS</span></a>
-      <p>Website thời trang tĩnh, sẵn sàng đưa lên GitHub Pages.</p>
+      <a class="brand small" href="#/"><span>AIR</span><span>PLUS</span></a>
+      <p>Website thời trang đầy đủ chức năng demo, chạy tĩnh trên GitHub Pages.</p>
     </div>
-    <nav aria-label="Footer">
-      <a href="#collection">Sản phẩm</a>
-      <a href="#technology">Công nghệ</a>
-      <a href="#support">Hỗ trợ</a>
+    <nav>
+      <a href="#/shop">Sản phẩm</a>
+      <a href="#/cart">Giỏ hàng</a>
+      <a href="#/orders">Đơn hàng</a>
       <a href="terms.html">Điều khoản</a>
       <a href="privacy.html">Quyền riêng tư</a>
     </nav>
   </footer>
 
-  <aside class="cart-drawer" data-cart-drawer aria-label="Giỏ hàng" aria-hidden="true">
-    <div class="drawer-head">
-      <div><p class="kicker">Giỏ hàng</p><h2>Đơn hàng của bạn</h2></div>
-      <button class="close-button" type="button" data-close-cart aria-label="Đóng giỏ hàng">×</button>
-    </div>
-    <div class="cart-items" data-cart-items></div>
-    <div class="promo-form">
-      <input type="text" placeholder="Mã giảm giá" data-promo-input />
-      <button type="button" data-apply-promo>Áp dụng</button>
-    </div>
-    <div class="cart-summary">
-      <div><span>Tạm tính</span><strong data-subtotal>0đ</strong></div>
-      <div><span>Giảm giá</span><strong data-discount>0đ</strong></div>
-      <div><span>Giao hàng</span><strong data-shipping>0đ</strong></div>
-      <div class="total"><span>Tổng cộng</span><strong data-total>0đ</strong></div>
-    </div>
-    <form class="checkout-form" data-checkout-form>
-      <input type="text" name="customer" placeholder="Tên người nhận" required />
-      <input type="tel" name="phone" placeholder="Số điện thoại" required />
-      <input type="text" name="address" placeholder="Địa chỉ giao hàng" required />
-      <button type="submit">Đặt hàng demo</button>
-    </form>
-  </aside>
-
-  <div class="modal" data-product-modal hidden></div>
   <div class="toast" data-toast role="status" aria-live="polite"></div>
-  <div class="backdrop" data-backdrop hidden></div>
-
   <script src="script.js"></script>
 </body>
 </html>
